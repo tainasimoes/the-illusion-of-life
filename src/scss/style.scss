@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'reset';
+
+body {
+	position: relative;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+#header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 4vw;
+	h1 {
+		font-size: 3vw;
+		font-weight: 800;
+	}
+}
+
+#wrap {
+	width: 100vw;
+	padding: 0 4vw 100px;
+	
+	// display: grid;
+	// grid-template-columns: repeat(4, 1fr);
+	// grid-gap: 40px;
+	// width: calc(100vw - 40px);
+	// overflow-x: scroll;
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+	article {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		p {
+			margin: 20px 0 60px;
+			font-size: 1.2vw;
+		}
+		.stage {
+			display: flex;
+		  flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+
+			height: 60vh;
+			// background-color: pink;
+			border: 1px solid #000;
+			.square {
+				display: block;
+				width: 100px;
+				height: 100px;
+				background-color: #000;
+			}
+		}
+	}
+}
+
+#footer {
+	padding: 20px 4vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	// background-color: rgba(255, 255, 255, .8);
+	p {
+		font-size: 1vw;
+	}
+}
+
+@media (max-width: 800px ){
+}
